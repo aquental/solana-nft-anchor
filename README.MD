@@ -3,23 +3,26 @@
 Based on the [Mint Your First NFT](https://calyptus.co/lessons/mint-your-first-nft/) lesson, this project shows how to mint your first NFT on the Solana blockchain using [Anchor](https://www.anchor-lang.com/) and [Metaplex](https://www.anchor-lang.com/).
 
 ## Table of Contents
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [Questions](#questions)
-- [License](#license)
+
+- [Solana-NFT-Anchor](#solana-nft-anchor)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Contributing](#contributing)
+  - [Questions](#questions)
+  - [License](#license)
 
 ## Getting Started
 
-To use this fork, you need to have [yarn](https://yarnpkg.com/getting-started/install), [Anchor](https://www.anchor-lang.com/docs/installation) and the [Solana cli suite](https://solana.com/developers/guides/getstarted/setup-local-development) installed on your machine. 
+To use this fork, you need to have [yarn](https://yarnpkg.com/getting-started/install), [Anchor](https://www.anchor-lang.com/docs/installation) and the [Solana cli suite](https://solana.com/developers/guides/getstarted/setup-local-development) installed on your machine.
 
-It is highly recommended that you start this project from scratch, following along with the tutorial. 
+It is highly recommended that you start this project from scratch, following along with the tutorial.
 
-To use the fork, follow the steps outlined below: 
+To use the fork, follow the steps outlined below:
 
 1. Clone your forked repo.
 
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/solana-nft-anchor
+git clone https://github.com/aquental/solana-nft-anchor
 ```
 
 2. Change directory into the root of your cloned repo and install missing node packages
@@ -42,11 +45,15 @@ anchor build
 anchor keys list
 ```
 
-5. Update your [`Anchor.toml`](Anchor.toml) file, by uncommenting the line blow and adding the address generated in the previous step. 
+```bash
+solana_nft_anchor: 3NReB6T8WG254kVxi538V83muxcTDa1CJYR3UUC91idE
+```
+
+5. Update your [`Anchor.toml`](Anchor.toml) file, by uncommenting the line blow and adding the address generated in the previous step.
 
 ```toml
 [programs.devnet] # uncomment below
-# solana_nft_anchor = "<ADD YOUR ADDRESS HERE>"
+# solana_nft_anchor = "3NReB6T8WG254kVxi538V83muxcTDa1CJYR3UUC91idE"
 ```
 
 6. Update your [`lib.rs`](programs/solana-nft-anchor/src//lib.rs) file by adding the the address generated in step 4 to the `declare_id!()` macro
@@ -58,7 +65,7 @@ use mpl_token_metadata::{
     state::DataV2,
 };
 
-declare_id!("<UPDATE HERE>");
+declare_id!("3NReB6T8WG254kVxi538V83muxcTDa1CJYR3UUC91idE");
 #[program]
 pub mod solana_nft_anchor {
     // snip
@@ -70,8 +77,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Questions
 
-Did you encounter a challenge following the tutorial or running the fork? 
-Head over to our [learning support](https://discord.com/channels/1130457754826461216/1132978998155165806) channel on our [Discord](https://discord.gg/38KftAhW) or alternatively, raise a ticket. 
+Did you encounter a challenge following the tutorial or running the fork?
+Head over to our [learning support](https://discord.com/channels/1130457754826461216/1132978998155165806) channel on our [Discord](https://discord.gg/38KftAhW) or alternatively, raise a ticket.
 
 We are always happy to lend a helping hand
 
