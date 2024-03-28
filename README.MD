@@ -89,3 +89,11 @@ All files within this repository are licensed under the MIT License unless expli
 100% Open Source software.
 
 © 2023 [Calyptus] - See [LICENSE](https://opensource.org/license/mit/) for details.
+
+---
+
+**Program Id**: 3NReB6T8WG254kVxi538V83muxcTDa1CJYR3UUC91idE
+
+mint nft tx: https://explorer.solana.com/tx/5TntH3e1ockf1NvkRkxN3tmvkvPYsecjj1RwGJu4HxMUHXvFukgpF9Lohfww2KG62Q3SKhUqnq6KE5BB4HdrfXkH?cluster=devnet
+
+minted nft: https://explorer.solana.com/address/BJ9EReAWitoFfEgk1gjrv8C8NepApyAfDXTvKUsNBQyt?cluster=devnet
