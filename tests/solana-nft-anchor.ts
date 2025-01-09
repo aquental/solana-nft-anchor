@@ -21,8 +21,7 @@ describe("solana-nft-anchor", async () => {
   // Configured the client to use the devnet cluster.
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
-  const program = anchor.workspace
-    .SolanaNftAnchor as Program<SolanaNftAnchor>;
+  const program = anchor.workspace.SolanaNftAnchor as Program<SolanaNftAnchor>;
 
   const signer = provider.wallet;
 
@@ -49,9 +48,10 @@ describe("solana-nft-anchor", async () => {
   })[0];
 
   const metadata = {
-    name: "Kobeni",
-    symbol: "kBN",
+    name: "SpellBound",
+    symbol: "SPELL",
     uri: "https://raw.githubusercontent.com/687c/solana-nft-native-client/main/metadata.json",
+    //uri: "https://www.dropbox.com/scl/fi/6z4vbpjqs4cpuvmli2do2/metadata.json",
   };
 
   it("mints nft!", async () => {
