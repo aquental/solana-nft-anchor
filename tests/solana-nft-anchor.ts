@@ -50,8 +50,8 @@ describe("solana-nft-anchor", async () => {
   const metadata = {
     name: "SpellBound",
     symbol: "SPELL",
-    uri: "https://raw.githubusercontent.com/687c/solana-nft-native-client/main/metadata.json",
-    //uri: "https://www.dropbox.com/scl/fi/6z4vbpjqs4cpuvmli2do2/metadata.json",
+    //uri: "https://raw.githubusercontent.com/687c/solana-nft-native-client/main/metadata.json",
+    uri: "https://aquental.github.io/metadata/metadata.json",
   };
 
   it("mints nft!", async () => {
